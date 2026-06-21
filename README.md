@@ -6,6 +6,18 @@ This project combines data cleaning, exploratory data analysis (EDA), feature en
 
 ---
 
+[📄 Executive Report](reports/Global_Coffee_Market_Analysis_Executive_Report.pdf)
+
+[📓 Jupyter Notebook](notebooks/global-coffee-market-analysis.ipynb)
+
+[📊 Tableau Dashboard](tableau/Global_Coffee_Market_Analysis_1990_2019.twbx)
+
+## 📸 Dashboard Preview
+
+![Dashboard Preview](images/Dashboard_Preview.png)
+
+---
+
 ## 📊 Project Overview
 
 The coffee industry is one of the world's most globally interconnected agricultural markets.
@@ -25,6 +37,10 @@ The final deliverables include:
 * An executive business report
 
 ---
+
+## 🎯 Business Objective
+
+The objective of this project was to analyze 30 years of global coffee market activity and identify structural patterns in production, exports, imports, and domestic consumption across coffee-producing and coffee-importing nations.
 
 ## 🛠 Tech Stack
 
@@ -152,8 +168,8 @@ Global-Coffee-Market-Analysis/
 ├── notebooks/
 │   └── global-coffee-market-analysis.ipynb
 │
-├── dashboard/
-│   └── coffee_dashboard.twbx
+├── tableau/
+│   └── Global_Coffe_Market_Analysis_1990-2019.twb
 │
 ├── reports/
 │   └── Global_Coffee_Market_Analysis_Executive_Report.pdf
@@ -179,11 +195,6 @@ Global-Coffee-Market-Analysis/
 
 ---
 
-## 📸 Dashboard Preview
-
-![Dashboard Preview](images/Dashboard_Preview.png)
----
-
 ## 📄 Executive Report
 
 A detailed executive report documenting methodology, findings, dashboard design decisions, and business implications is included in the repository.
@@ -196,6 +207,6 @@ A detailed executive report documenting methodology, findings, dashboard design 
 
 Aspiring Data Analyst passionate about analytics, visualization, and transforming raw data into actionable insights.
 
-LinkedIn: [(https://www.linkedin.com/in/ezequiel-gonzalez-data/)]
+LinkedIn: [Ezequiel Gonzalez](https://www.linkedin.com/in/ezequiel-gonzalez-data/)
 
-GitHub: [(https://github.com/arielezequielwork)]
+GitHub: [arielezequielwork](https://github.com/arielezequielwork)
