@@ -183,7 +183,7 @@ Global-Coffee-Market-Analysis/
 
 > Add a dashboard screenshot here.
 
-![Dashboard Preview](C:\Users\wwwCo\Desktop\Coffe Market Analisis\images/dashboard_preview.png)
+![Dashboard Preview](C:\Users\wwwCo\Desktop\Coffe Market Analisis\images\dashboard_preview.png)
 
 ---
 
