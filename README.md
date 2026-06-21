@@ -181,8 +181,6 @@ Global-Coffee-Market-Analysis/
 
 ## 📸 Dashboard Preview
 
-> Add a dashboard screenshot here.
-
 ![Dashboard Preview](images/Dashboard_Preview.png)
 ---
 
