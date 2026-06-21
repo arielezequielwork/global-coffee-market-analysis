@@ -183,7 +183,7 @@ Global-Coffee-Market-Analysis/
 
 > Add a dashboard screenshot here.
 
-![Dashboard Preview](images/dashboard_preview.png)
+![Dashboard Preview](images/Dashboard_Preview.png)
 ---
 
 ## 📄 Executive Report
@@ -198,6 +198,6 @@ A detailed executive report documenting methodology, findings, dashboard design 
 
 Aspiring Data Analyst passionate about analytics, visualization, and transforming raw data into actionable insights.
 
-LinkedIn: [[Add Link](https://www.linkedin.com/in/ezequiel-gonzalez-data/)]
+LinkedIn: [(https://www.linkedin.com/in/ezequiel-gonzalez-data/)]
 
-GitHub: [[Add Link](https://github.com/arielezequielwork)]
+GitHub: [(https://github.com/arielezequielwork)]
