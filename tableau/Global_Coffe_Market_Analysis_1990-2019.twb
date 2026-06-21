@@ -1,0 +1,2003 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IndividualControlFormatting />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='coffee_master' inline='true' name='federated.06vdfcy0t6b68t1f91lqg0i1l8j2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='coffee_master' name='textscan.15qc31t06g8x4q1b06ct31p6qi31'>
+            <connection class='textscan' directory='C:/Users/wwwCo/Desktop/global-coffee-market-analysis/data/processed' filename='coffee_master.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.15qc31t06g8x4q1b06ct31p6qi31' name='coffee_master.csv' table='[coffee_master#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_US' separator=','>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='real' name='Production' ordinal='2' />
+            <column datatype='real' name='Consumption' ordinal='3' />
+            <column datatype='real' name='Exports' ordinal='4' />
+            <column datatype='real' name='Imports' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[coffee_master.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[coffee_master.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[coffee_master.csv_2F4DC8CE66FD4DE7A22E6A4782D51A56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[coffee_master.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[coffee_master.csv_2F4DC8CE66FD4DE7A22E6A4782D51A56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Production</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Production]</local-name>
+            <parent-name>[coffee_master.csv]</parent-name>
+            <remote-alias>Production</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[coffee_master.csv_2F4DC8CE66FD4DE7A22E6A4782D51A56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Consumption</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Consumption]</local-name>
+            <parent-name>[coffee_master.csv]</parent-name>
+            <remote-alias>Consumption</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[coffee_master.csv_2F4DC8CE66FD4DE7A22E6A4782D51A56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exports</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Exports]</local-name>
+            <parent-name>[coffee_master.csv]</parent-name>
+            <remote-alias>Exports</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[coffee_master.csv_2F4DC8CE66FD4DE7A22E6A4782D51A56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Imports</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Imports]</local-name>
+            <parent-name>[coffee_master.csv]</parent-name>
+            <remote-alias>Imports</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[coffee_master.csv_2F4DC8CE66FD4DE7A22E6A4782D51A56]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' default-format='n#,##0,,,.0B;-#,##0,,,.0B' name='[Consumption]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <semantic-values semantic-role='[Country].[Name]'>
+          <semantic-value key='&quot;Belgium/Luxembourg&quot;' value='&quot;Belgium&quot;' />
+        </semantic-values>
+      </column>
+      <column datatype='real' default-format='n#,##0,,,.0B;-#,##0,,,.0B' name='[Exports]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Imports]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='n#,##0,,,.0B;-#,##0,,,.0B' name='[Production]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='coffee_master.csv' datatype='table' name='[__tableau_internal_object_id__].[coffee_master.csv_2F4DC8CE66FD4DE7A22E6A4782D51A56]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[coffee_master.csv_2F4DC8CE66FD4DE7A22E6A4782D51A56]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:coffee_master.csv_2F4DC8CE66FD4DE7A22E6A4782D51A56:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Consumption]' derivation='Sum' name='[sum:Consumption:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Exports]' derivation='Sum' name='[sum:Exports:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Imports]' derivation='Sum' name='[sum:Imports:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Production]' derivation='Sum' name='[sum:Production:qk]' pivot='key' type='quantitative' />
+      <group caption='Acción (Country)' hidden='true' name='[Action (Country)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Country]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (Country,Year)' hidden='true' name='[Action (Country,Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Country]' />
+          <groupfilter function='level-members' level='[none:Year:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Year)' hidden='true' name='[Action (Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Year:ok]' />
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/wwwCo/AppData/Local/Temp/TableauTemp/#TableauTemp_1fbjjmx03z63is155bpcl0fqr3ks.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/15/2026 08:46:10 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>coffee_master.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>90</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[coffee_master.csv_2F4DC8CE66FD4DE7A22E6A4782D51A56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>coffee_master.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[coffee_master.csv_2F4DC8CE66FD4DE7A22E6A4782D51A56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Production</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Production]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Production</remote-alias>
+              <ordinal>2</ordinal>
+              <family>coffee_master.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>711</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[coffee_master.csv_2F4DC8CE66FD4DE7A22E6A4782D51A56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Consumption</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Consumption]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Consumption</remote-alias>
+              <ordinal>3</ordinal>
+              <family>coffee_master.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>391</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[coffee_master.csv_2F4DC8CE66FD4DE7A22E6A4782D51A56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Exports</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Exports]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Exports</remote-alias>
+              <ordinal>4</ordinal>
+              <family>coffee_master.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>642</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[coffee_master.csv_2F4DC8CE66FD4DE7A22E6A4782D51A56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Imports</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Imports]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Imports</remote-alias>
+              <ordinal>5</ordinal>
+              <family>coffee_master.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>735</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[coffee_master.csv_2F4DC8CE66FD4DE7A22E6A4782D51A56]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Country:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Cameroon&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Gabon&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Lithuania&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Rwanda&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Zambia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Angola&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Dominican Republic&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Papua New Guinea&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Trinidad &amp; Tobago&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bolivia (Plurinational State of)&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Estonia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Kenya&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;United States of America&quot;</bucket>
+            </map>
+            <map to='#762f3d'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Costa Rica&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Guatemala&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Malta&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Central African Republic&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sierra Leone&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Zimbabwe&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Ethiopia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lao People&apos;s Democratic Republic&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Venezuela&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Democratic Republic of Congo&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Timor-Leste&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ecuador&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Paraguay&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Tunisia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cyprus&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Honduras&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Nicaragua&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Tanzania&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Latvia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Côte d&apos;Ivoire&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Guinea&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sri Lanka&quot;</bucket>
+            </map>
+            <map to='#ce6716'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Croatia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Guyana&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Nepal&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Czechia&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Nigeria&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Panama&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Togo&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ghana&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Madagascar&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Slovakia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Burundi&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Liberia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Russian Federation&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Yemen&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;El Salvador&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jamaica&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Peru&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Uganda&quot;</bucket>
+            </map>
+            <map to='#f5c062'>
+              <bucket>&quot;Viet Nam&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cuba&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Haiti&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Congo&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Greece&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Malawi&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Slovenia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Belgium/Luxembourg&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Equatorial Guinea&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Philippines&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' palette='sf_sunrise' type='palette'>
+            <map to='#762f3d'>
+              <bucket>&quot;[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Production:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[__tableau_internal_object_id__].[cnt:coffee_master.csv_2F4DC8CE66FD4DE7A22E6A4782D51A56:qk]&quot;</bucket>
+            </map>
+            <map to='#ce6716'>
+              <bucket>&quot;[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Exports:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Imports:qk]&quot;</bucket>
+            </map>
+            <map to='#f5c062'>
+              <bucket>&quot;[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Consumption:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Argentina&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='coffee_master.csv' id='coffee_master.csv_2F4DC8CE66FD4DE7A22E6A4782D51A56'>
+            <properties context=''>
+              <relation connection='textscan.15qc31t06g8x4q1b06ct31p6qi31' name='coffee_master.csv' table='[coffee_master#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_US' separator=','>
+                  <column datatype='string' name='Country' ordinal='0' />
+                  <column datatype='integer' name='Year' ordinal='1' />
+                  <column datatype='real' name='Production' ordinal='2' />
+                  <column datatype='real' name='Consumption' ordinal='3' />
+                  <column datatype='real' name='Exports' ordinal='4' />
+                  <column datatype='real' name='Imports' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter1' name='[Action2_B9DE3630EAC245F08C3D7F367FEEF3CF]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet'>
+        <exclude-sheet name='KPI - Total Production' />
+        <exclude-sheet name='KPI - Largest Consumer ' />
+        <exclude-sheet name='KPI - Leading Producer' />
+        <exclude-sheet name='KPI - Total Exports' />
+      </source>
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='KPI - Total Production,KPI - Largest Consumer ,KPI - Leading Producer,KPI - Total Exports' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Coffee Market Dynamics'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coffee_master' name='federated.06vdfcy0t6b68t1f91lqg0i1l8j2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.06vdfcy0t6b68t1f91lqg0i1l8j2'>
+            <column datatype='real' default-format='n#,##0,,,.0B;-#,##0,,,.0B' name='[Consumption]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Belgium/Luxembourg&quot;' value='&quot;Belgium&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='real' default-format='n#,##0,,,.0B;-#,##0,,,.0B' name='[Exports]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Imports]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='n#,##0,,,.0B;-#,##0,,,.0B' name='[Production]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Consumption]' derivation='Sum' name='[sum:Consumption:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Exports]' derivation='Sum' name='[sum:Exports:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Imports]' derivation='Sum' name='[sum:Imports:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Production]' derivation='Sum' name='[sum:Production:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Production:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Exports:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Consumption:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Imports:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Production:qk]&quot;</bucket>
+              <bucket>&quot;[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Exports:qk]&quot;</bucket>
+              <bucket>&quot;[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Consumption:qk]&quot;</bucket>
+              <bucket>&quot;[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Imports:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[Action (Country)]'>
+            <groupfilter function='level-members' level='[Country]' user:ui-action-filter='[Action2_B9DE3630EAC245F08C3D7F367FEEF3CF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[none:Country:nk]'>
+            <groupfilter function='level-members' level='[none:Country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[:Measure Names]</column>
+            <column>[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[none:Country:nk]</column>
+            <column>[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[Action (Country)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Imports:qk]' value='n#,##0,,,.0B;-#,##0,,,.0B' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' field='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[:Measure Names]' id='legend-color' value='auto' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[:Measure Names]' />
+              <lod column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[Multiple Values]</rows>
+        <cols>[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{F4475BE3-551C-45AA-AA30-253D0AF1AB22}' />
+    </worksheet>
+    <worksheet name='Coffee Production Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coffee_master' name='federated.06vdfcy0t6b68t1f91lqg0i1l8j2' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.06vdfcy0t6b68t1f91lqg0i1l8j2'>
+            <column datatype='real' default-format='n#,##0,,,.0B;-#,##0,,,.0B' name='[Consumption]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Belgium/Luxembourg&quot;' value='&quot;Belgium&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='real' default-format='n#,##0,,,.0B;-#,##0,,,.0B' name='[Exports]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Imports]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='n#,##0,,,.0B;-#,##0,,,.0B' name='[Production]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Consumption]' derivation='Sum' name='[sum:Consumption:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Exports]' derivation='Sum' name='[sum:Exports:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Imports]' derivation='Sum' name='[sum:Imports:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Production]' derivation='Sum' name='[sum:Production:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[Action (Year)]'>
+            <groupfilter function='level-members' level='[none:Year:ok]' user:ui-action-filter='[Action2_B9DE3630EAC245F08C3D7F367FEEF3CF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[Action (Year)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[Longitude (generated)]' field-type='quantitative' max='13726878.59502412' min='-26191624.128941223' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[Latitude (generated)]' field-type='quantitative' max='6228018.2351100612' min='-9301373.7583690025' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Imports:qk]' value='n#,##0,,,.0B;-#,##0,,,.0B' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Imports:qk]' value='' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Production:qk]' max='75082980000.0' min='1080000.0' palette='brown_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+            <format attr='wrap' value='false' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Production:qk]' />
+              <lod column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Exports:qk]' />
+              <lod column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Consumption:qk]' />
+              <lod column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[none:Country:nk]' />
+              <lod column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Imports:qk]' />
+              <geometry column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#000000'><![CDATA[                  🌍<[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[none:Country:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run fontcolor='#000000'><![CDATA[Exports:	🚢<[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Exports:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#000000'><![CDATA[Production:	☕<[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Production:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#000000'><![CDATA[Consumption:	👥<[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Consumption:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#000000'><![CDATA[Imports:        <[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Imports:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='has-halo' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[Latitude (generated)]</rows>
+        <cols>[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{8255D9EE-6674-4772-9E30-4F5C442E9F80}' />
+    </worksheet>
+    <worksheet name='KPI - Largest Consumer '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#1b1b1b' fontname='Benton Sans Book' fontsize='10'>🏆 </run>
+            <run bold='true' fontcolor='#1b1b1b' fontsize='10'>Largest Consumer</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coffee_master' name='federated.06vdfcy0t6b68t1f91lqg0i1l8j2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.06vdfcy0t6b68t1f91lqg0i1l8j2'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Belgium/Luxembourg&quot;' value='&quot;Belgium&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[none:Country:nk]'>
+            <groupfilter function='member' level='[none:Country:nk]' member='&quot;Brazil&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[none:Country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='162' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[none:Country:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='22'>&lt;</run>
+                <run fontsize='22'>[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[none:Country:nk]</run>
+                <run fontsize='22'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FFE91536-7527-465B-BD24-1A27DE0E7676}' />
+    </worksheet>
+    <worksheet name='KPI - Leading Producer'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>🏆 </run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Leading Producer</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coffee_master' name='federated.06vdfcy0t6b68t1f91lqg0i1l8j2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.06vdfcy0t6b68t1f91lqg0i1l8j2'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Belgium/Luxembourg&quot;' value='&quot;Belgium&quot;' />
+              </semantic-values>
+            </column>
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[none:Country:nk]'>
+            <groupfilter function='member' level='[none:Country:nk]' member='&quot;Brazil&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[none:Country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='205' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[none:Country:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='22'>&lt;</run>
+                <run fontsize='22'>[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[none:Country:nk]</run>
+                <run fontsize='22'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{47733E44-9CE0-4F70-AF55-DA3A4381C587}' />
+    </worksheet>
+    <worksheet name='KPI - Total Exports'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='10'>☕</run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Total Coffee Exports</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coffee_master' name='federated.06vdfcy0t6b68t1f91lqg0i1l8j2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.06vdfcy0t6b68t1f91lqg0i1l8j2'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Belgium/Luxembourg&quot;' value='&quot;Belgium&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='real' default-format='n#,##0,,,.0B;-#,##0,,,.0B' name='[Exports]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Exports]' derivation='Sum' name='[sum:Exports:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[none:Country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Angola&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Austria&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Belgium&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Belgium/Luxembourg&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Bolivia (Plurinational State of)&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Brazil&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Bulgaria&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Burundi&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Cameroon&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Central African Republic&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Colombia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Congo&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Costa Rica&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Côte d&apos;Ivoire&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Croatia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Cuba&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Cyprus&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Czechia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Democratic Republic of Congo&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Denmark&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Dominican Republic&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Ecuador&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;El Salvador&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Equatorial Guinea&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Estonia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Ethiopia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Finland&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;France&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Gabon&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Ghana&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Greece&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Guatemala&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Guinea&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Guyana&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Haiti&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Honduras&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Hungary&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Indonesia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Ireland&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Italy&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Jamaica&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Japan&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Kenya&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Lao People&apos;s Democratic Republic&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Latvia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Liberia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Lithuania&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Luxembourg&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Madagascar&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Malawi&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Malta&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Mexico&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Nepal&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Netherlands&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Nicaragua&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Nigeria&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Norway&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Panama&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Papua New Guinea&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Paraguay&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Peru&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Philippines&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Poland&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Portugal&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Romania&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Russian Federation&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Rwanda&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Sierra Leone&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Slovakia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Slovenia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Spain&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Sri Lanka&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Sweden&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Switzerland&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Tanzania&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Thailand&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Timor-Leste&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Togo&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Trinidad &amp; Tobago&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Tunisia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Uganda&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;United States of America&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Venezuela&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Viet Nam&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Yemen&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Zambia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Zimbabwe&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[none:Country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Exports:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='22'>&lt;</run>
+                <run fontsize='22'>[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Exports:qk]</run>
+                <run fontsize='22'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{79F2A182-CED3-4630-9012-AD2F30EFFF95}' />
+    </worksheet>
+    <worksheet name='KPI - Total Production'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='10'>☕ Total Coffee Production</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text />
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='coffee_master' name='federated.06vdfcy0t6b68t1f91lqg0i1l8j2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.06vdfcy0t6b68t1f91lqg0i1l8j2'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;Belgium/Luxembourg&quot;' value='&quot;Belgium&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='real' default-format='n#,##0,,,.0B;-#,##0,,,.0B' name='[Production]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Production]' derivation='Sum' name='[sum:Production:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[none:Country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Angola&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Austria&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Belgium&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Belgium/Luxembourg&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Bolivia (Plurinational State of)&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Brazil&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Bulgaria&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Burundi&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Cameroon&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Central African Republic&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Colombia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Congo&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Costa Rica&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Côte d&apos;Ivoire&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Croatia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Cuba&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Cyprus&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Czechia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Democratic Republic of Congo&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Denmark&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Dominican Republic&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Ecuador&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;El Salvador&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Equatorial Guinea&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Estonia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Ethiopia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Finland&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;France&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Gabon&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Ghana&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Greece&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Guatemala&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Guinea&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Guyana&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Haiti&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Honduras&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Hungary&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Indonesia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Ireland&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Italy&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Jamaica&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Japan&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Kenya&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Lao People&apos;s Democratic Republic&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Latvia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Liberia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Lithuania&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Luxembourg&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Madagascar&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Malawi&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Malta&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Mexico&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Nepal&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Netherlands&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Nicaragua&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Nigeria&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Norway&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Panama&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Papua New Guinea&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Paraguay&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Peru&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Philippines&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Poland&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Portugal&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Romania&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Russian Federation&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Rwanda&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Sierra Leone&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Slovakia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Slovenia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Spain&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Sri Lanka&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Sweden&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Switzerland&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Tanzania&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Thailand&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Timor-Leste&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Togo&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Trinidad &amp; Tobago&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Tunisia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Uganda&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;United States of America&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Venezuela&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Viet Nam&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Yemen&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Zambia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Zimbabwe&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[none:Country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Production:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='22'>&lt;</run>
+                <run fontsize='22'>[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Production:qk]</run>
+                <run fontsize='22'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{40BE0003-6C4B-4E98-8629-7A99CEC91CAA}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>☕ </run>
+            <run bold='true' fontalignment='1' fontcolor='#9d7660' fontname='Benton Sans Book'>Global Coffee Market Analysis (1990-2019)</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#898989' fontname='Benton Sans Book' fontsize='10'>Production, Exports, Domestic Consumption and Country Performance</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#ebebeb' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98230' id='38' param='horz' type-v2='layout-flow' w='99318' x='341' y='885'>
+            <zone h='98230' id='34' type-v2='layout-basic' w='99318' x='341' y='885'>
+              <zone h='98230' id='20' param='horz' type-v2='layout-flow' w='99318' x='341' y='885'>
+                <zone h='98230' id='18' type-v2='layout-basic' w='99318' x='341' y='885'>
+                  <zone h='98230' id='15' param='vert' type-v2='layout-flow' w='99318' x='341' y='885'>
+                    <zone fixed-size='56' h='7080' id='16' is-fixed='true' type-v2='title' w='99318' x='341' y='885'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone fixed-size='100' h='11062' id='24' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='99318' x='341' y='7965'>
+                      <zone h='11062' id='25' name='KPI - Total Production' w='24861' x='341' y='7965'>
+                        <layout-cache fixed-size-h='91' fixed-size-w='380' type-h='fixed' type-w='fixed' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='11062' id='26' name='KPI - Total Exports' w='24819' x='25202' y='7965'>
+                        <layout-cache fixed-size-h='89' fixed-size-w='380' type-h='fixed' type-w='fixed' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='11062' id='27' name='KPI - Leading Producer' w='24819' x='50021' y='7965'>
+                        <layout-cache fixed-size-h='73' fixed-size-w='205' type-h='fixed' type-w='fixed' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='11062' id='28' name='KPI - Largest Consumer ' w='24819' x='74840' y='7965'>
+                        <layout-cache fixed-size-h='73' fixed-size-w='162' type-h='fixed' type-w='fixed' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                    <zone h='80088' id='40' param='horz' type-v2='layout-flow' w='99318' x='341' y='19027'>
+                      <zone h='80088' id='32' name='Coffee Production Map' show-title='false' w='50532' x='341' y='19027'>
+                        <layout-cache minheight='201' minwidth='201' type-h='scalable' type-w='scalable' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='80088' id='33' name='Coffee Market Dynamics' w='48786' x='50873' y='19027'>
+                        <layout-cache minheight='198' minwidth='160' type-h='scalable' type-w='scalable' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>☕ </run>
+                <run bold='true' fontalignment='1' fontcolor='#9d7660' fontname='Benton Sans Book'>Global Coffee Market Analysis (1990-2019)</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontcolor='#898989' fontname='Benton Sans Book' fontsize='10'>Production, Exports, Domestic Consumption and Country Performance</run>
+                <run fontalignment='1'>Æ&#10;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='44' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98230' id='43' param='vert' type-v2='layout-flow' w='99318' x='341' y='885'>
+                <zone fixed-size='56' h='7080' id='16' type-v2='title' w='99318' x='341' y='885'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='80' h='11062' id='25' is-fixed='true' name='KPI - Total Production' w='24861' x='341' y='7965'>
+                  <layout-cache fixed-size-h='91' fixed-size-w='380' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='80' h='11062' id='26' is-fixed='true' name='KPI - Total Exports' w='24819' x='25202' y='7965'>
+                  <layout-cache fixed-size-h='89' fixed-size-w='380' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='80' h='11062' id='27' is-fixed='true' name='KPI - Leading Producer' w='24819' x='50021' y='7965'>
+                  <layout-cache fixed-size-h='73' fixed-size-w='205' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='80' h='11062' id='28' is-fixed='true' name='KPI - Largest Consumer ' w='24819' x='74840' y='7965'>
+                  <layout-cache fixed-size-h='73' fixed-size-w='162' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='80088' id='32' is-fixed='true' name='Coffee Production Map' show-title='false' w='50532' x='341' y='19027'>
+                  <layout-cache minheight='201' minwidth='201' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='80088' id='33' is-fixed='true' name='Coffee Market Dynamics' w='48786' x='50873' y='19027'>
+                  <layout-cache minheight='198' minwidth='160' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1AC2FA08-76D0-40FE-A802-77CC861D8B40}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Coffee Market Dynamics'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Coffee Production Map'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='KPI - Largest Consumer ' />
+        <viewpoint name='KPI - Leading Producer' />
+        <viewpoint name='KPI - Total Exports' />
+        <viewpoint name='KPI - Total Production' />
+      </viewpoints>
+      <active id='32' />
+      <simple-id uuid='{D4952539-DE85-4C3C-A4ED-E6E88E0DF7B7}' />
+    </window>
+    <window class='worksheet' name='Coffee Production Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[sum:Production:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{0B630840-3047-4BA3-A701-9EE39C262318}' />
+    </window>
+    <window class='worksheet' name='Coffee Market Dynamics'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.06vdfcy0t6b68t1f91lqg0i1l8j2].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7F06D446-C459-418A-8893-874A1A3BEFDC}' />
+    </window>
+    <window class='worksheet' name='KPI - Total Production'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D5205976-2987-439C-813B-1CD09A264420}' />
+    </window>
+    <window class='worksheet' name='KPI - Total Exports'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BDE0CAE5-066F-4523-9315-96CB472F4B5C}' />
+    </window>
+    <window class='worksheet' name='KPI - Leading Producer'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B3207C14-8AF9-446F-8CE6-2E143AFAFD0F}' />
+    </window>
+    <window class='worksheet' name='KPI - Largest Consumer '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A2B93FBD-5D0B-49B0-A528-AE9F0B4C58A2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      Cv3/LtYa2bTjWv0AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='44' name='KPI - Leading Producer' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
